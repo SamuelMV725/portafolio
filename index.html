@@ -1,62 +1,169 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <link rel="stylesheet" href="style.CSS">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio de Samuel Monsalve</title>
+    <style>
+        /* ===== Estilos Generales ===== */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f6d365, #fda085);
+            color: #333;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px 30px 20px;
+        }
+
+        header h1 {
+            font-size: 3em;
+            color: #4a148c;
+            margin: 0;
+        }
+
+        header h2 {
+            font-size: 1.5em;
+            color: #6a1b9a;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        /* ===== Contenedor de proyectos ===== */
+        .projects-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto 50px auto;
+        }
+
+        /* ===== Tarjetas de proyecto ===== */
+        .project-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #4a148c;
+        }
+
+        .project-card p {
+            margin: 10px 0 20px 0;
+            color: #555;
+        }
+
+        .project-card a {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #6a1b9a;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 8px;
+            transition: all 0.3s;
+            font-weight: 600;
+        }
+
+        .project-card a:hover {
+            background-color: #4a148c;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+        }
+
+        /* ===== Pie de página ===== */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #4a148c;
+            color: white;
+        }
+
+        /* ===== Responsivo ===== */
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 2.2em;
+            }
+
+            header h2 {
+                font-size: 1.2em;
+            }
+
+            .project-card a {
+                padding: 8px 15px;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Samuel Monsalve Vanegas</h1>
-    <h2>Soy un coder de Riwi</h2>
+    <header>
+        <h1>Samuel Monsalve Vanegas</h1>
+        <h2>Soy un coder de Riwi</h2>
+    </header>
 
-    <table>
-        <thead>
-            <th>Actividad</th>
-            <th>Link</th>
-        </thead>
+    <section class="projects-container">
+        <div class="project-card">
+            <h3>PYTHON</h3>
+            <p>Actividades del módulo 1 Python</p>
+            <a href="https://github.com/SamuelMV725/TRABAJOS-DE-MOODLE" target="_blank">Ver proyecto</a>
+        </div>
 
-        <tr>
-            <td>PYTHON</td>
-            <td><a href="https://github.com/SamuelMV725/TRABAJOS-DE-MOODLE">Actividades del modulo 1 python</a></td>
-        </tr>
+        <div class="project-card">
+            <h3>EJERCICIOS PT1</h3>
+            <p>10 Ejercicios pt1</p>
+            <a href="https://github.com/SamuelMV725/10-EJERCICIOS-PT1/tree/main/Documentos" target="_blank">Ver proyecto</a>
+        </div>
 
-        <tr>
-            <td>EJERCICIOS</td>
-            <td><a href="https://github.com/SamuelMV725/10-EJERCICIOS-PT1/tree/main/Documentos">10 Ejercicios pt1</a></td>
-        </tr>
+        <div class="project-card">
+            <h3>EJERCICIOS PT2</h3>
+            <p>10 Ejercicios pt2</p>
+            <a href="https://github.com/SamuelMV725/10-EJERCICIOS-PT2" target="_blank">Ver proyecto</a>
+        </div>
 
-        <tr>
-            <td>EJERCICIOS</td>
-            <td><a href="https://github.com/SamuelMV725/10-EJERCICIOS-PT2">10 EJercicios pt2</a></td>
-        </tr>
+        <div class="project-card">
+            <h3>ECO RIDE</h3>
+            <p>Trabajo Eco Ride</p>
+            <a href="https://github.com/SamuelMV725/ECORIDE" target="_blank">Ver proyecto</a>
+        </div>
 
-        <tr>
-            <td>ECO RIDE</td>
-            <td><a href="https://github.com/SamuelMV725/ECORIDE">Trabajo Eco Ride</a></td>
-        </tr>
+        <div class="project-card">
+            <h3>CSV Y PYTHON</h3>
+            <p>Trabajo de Python</p>
+            <a href="https://github.com/SamuelMV725/TRABAJO_PYTHON" target="_blank">Ver proyecto</a>
+        </div>
 
-        
-        <tr>
-            <td>CSV Y PYTHON</td>
-            <td><a href="https://github.com/SamuelMV725/TRABAJO_PYTHON">Trabajo de python</a></td>
-        </tr>
-        
-        <tr>
-            <td>MERLIN</td>
-            <td><a href="https://github.com/SamuelMV725/Merlin/blob/main/Merlin.html">Trabajo individual merlin</a></td>
-        </tr>
+        <div class="project-card">
+            <h3>MERLIN</h3>
+            <p>Trabajo individual Merlin</p>
+            <a href="https://github.com/SamuelMV725/Merlin/blob/main/Merlin.html" target="_blank">Ver proyecto</a>
+        </div>
 
-        <tr>
-            <td>ARTHURS KINGDOM</td>
-            <td><a href="https://github.com/JoseRivera-07/Arthur-s-Kingdom">Trabajo Arthurs kingdom</a></td>
-        </tr>
+        <div class="project-card">
+            <h3>ARTHURS KINGDOM</h3>
+            <p>Trabajo Arthurs Kingdom</p>
+            <a href="https://github.com/JoseRivera-07/Arthur-s-Kingdom" target="_blank">Ver proyecto</a>
+        </div>
 
-        
-        <tr>
-            <td>HTML</td>
-            <td><a href="https://github.com/SamuelMV725/crudscope-html-mediapanel">Trabajo de HTML/a></td>
-        </tr>
-    </table>
+        <div class="project-card">
+            <h3>HTML</h3>
+            <p>Trabajo de HTML</p>
+            <a href="https://github.com/SamuelMV725/crudscope-html-mediapanel" target="_blank">Ver proyecto</a>
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2025 Samuel Monsalve Vanegas 
+    </footer>
 </body>
 </html>
